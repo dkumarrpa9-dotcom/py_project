@@ -3,7 +3,7 @@ def get_book_text(file_path):
     try:
         with open(file_path, encoding='utf-8') as path:
             result_text = path.read()
-            num_words = result_text.split()
+            num_words = len(result_text.split())
             print(f"{num_words} words found in the document")
 
     except Exception as e:
